@@ -33,7 +33,7 @@ public class AppController {
 		core.updateTransactionList(tran);
 		return tran;
 	}
-
+	
 	@RequestMapping("/")
 	public String check() {
 		return "Up and running";

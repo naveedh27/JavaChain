@@ -14,6 +14,7 @@ public class Block implements Serializable {
 	public String data;
 	
 	
+	public long nonce = 0;
 	public String blockHash;
 	
 	public Block(int height, String prevHash, String data) {
@@ -23,11 +24,13 @@ public class Block implements Serializable {
 		this.data = data;
 	}
 
-
 	@Override
 	public String toString() {
-		return "Block [height=" + height + ", prevHash=" + prevHash + ", data=" + data + "]";
+		return "Block [height=" + height + ", prevHash=" + prevHash + ", data=" + data + ", nonce=" + nonce
+				+ ", blockHash=" + blockHash + "]";
 	}
+
+
 	
 	
 
